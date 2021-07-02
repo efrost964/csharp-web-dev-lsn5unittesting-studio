@@ -36,6 +36,18 @@ namespace BalancedBracketsNS
                 {
                     brackets--;
                 }
+                if(brackets == -1)
+                {
+                    break;
+                }
+            }
+            if(!str.Contains("["))
+            {
+                return false;
+            }
+            else if (!str.Contains("]"))
+            {
+                return false;
             }
             return brackets == 0;
         }
